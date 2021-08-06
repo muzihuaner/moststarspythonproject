@@ -63,5 +63,5 @@ chart.render_to_file('python_ropes.svg')
 with open('index.html','w',encoding='utf-8') as html_file:
     html_file.write('<html><head><title>Github上获得最多Stars的Python项目</title><meta charset="utf-8"></head><body><h1>Github上获得最多Stars的Python项目</h1>\n')
     for svg in['python_ropes.svg']:
-        html_file.write('  <object type="image/svg+xml" data="{0}" height=500></object>\n'.format(svg))
+        html_file.write('  <object type="image/svg+xml" data="{0}"></object>\n'.format(svg))
         html_file.write('</body></html>')
